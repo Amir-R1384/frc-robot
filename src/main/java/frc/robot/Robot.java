@@ -120,7 +120,7 @@ public class Robot extends TimedRobot {
         leftTrigger = m_robotContainer.getXboxController1().getLeftTriggerAxis();
         rightTrigger = m_robotContainer.getXboxController1().getRightTriggerAxis();
         turn = m_robotContainer.getXboxController1().getLeftX();
-        m_robotContainer.m_drive.arcadeDrive(0.8*(rightTrigger-leftTrigger), turn);
+        m_robotContainer.m_drive.arcadeDrive(0.6*(rightTrigger-leftTrigger), turn*0.8);
     }
 
     @Override
